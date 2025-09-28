@@ -13,6 +13,9 @@ let selectedRecipient = null;
 let pollInterval = null;
 
 function appendMessage(text, sender = 'bot', timestamp = null) {
+  if(sender === selectedRecipient){
+
+  
   const div = document.createElement('div');
   div.className = 'message ' + sender;
 
@@ -29,6 +32,7 @@ function appendMessage(text, sender = 'bot', timestamp = null) {
   div.appendChild(timeDiv);
   messages.appendChild(div);
   messages.scrollTop = messages.scrollHeight;
+  }
 }
 
 usernameInput.addEventListener('change', async () => {
