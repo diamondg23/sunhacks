@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encrypted Chat</title>
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+  <div id="chat-container">
+    <aside id="user-list">
+      <div id="user-list-header">
+        <h3>Users</h3>
+      </div>
+      <div id="users"></div>
+    </aside>
+    <main id="chat-main">
+      <div id="chat-header">
+        <h2>Simple Chat</h2>
+        <input id="username" type="text" placeholder="Your Username" />
+      </div>
+      <div id="messages"></div>
+      <div id="input-area">
+        <input id="input" type="text" placeholder="Type a message..." />
+        <button id="send">Send</button>
+      </div>
+    </main>
+  </div>
+  <script src="chat.js"></script>
+</body>
+</html>
